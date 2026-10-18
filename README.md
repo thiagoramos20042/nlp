@@ -1,33 +1,39 @@
-# 📊 Descobrindo o que os clientes realmente pensam: uma imersão na Análise de Sentimentos com Python 🐍
+# NLP | Sentimentos em avaliações de produtos
 
-Em um mundo cada vez mais digital, as opiniões dos clientes se tornaram uma moeda valiosa. Avaliações, comentários e publicações nas redes sociais são algumas das formas pelas quais os clientes expressam suas opiniões. Mas como uma empresa pode usar esses dados para tomar decisões estratégicas? A resposta está na Análise de Sentimentos.
+Coleta e processamento de avaliações de produtos com análise de polaridade textual.
 
-Recentemente, desenvolvi um código em Python que raspa as avaliações de um produto na Amazon e realiza uma análise de sentimento dessas avaliações. Aqui está uma visão geral do que ele faz:
+**Automação e coleta** · Script de estudo
 
-1️⃣ Coleta de Dados: O script automatizado acessa a página de avaliações do produto na Amazon e coleta as avaliações dos clientes. Ele faz isso repetidamente para várias páginas de avaliações.
+[← Portfólio de Thiago Oliveira](https://github.com/thiagoramos20042/thiagoramos20042) · [Catálogo de projetos](https://github.com/thiagoramos20042/thiagoramos20042/blob/main/PROJETOS.md)
 
-2️⃣ Pré-processamento: Depois que as avaliações são coletadas, o texto é pré-processado para melhor análise. Isso inclui a conversão para minúsculas, a remoção de pontuação e a tokenização (separação em palavras individuais). Também remove as “stop words” (palavras comuns que geralmente não agregam muito significado) e realiza a lematização, que é a redução das palavras a sua forma básica.
+## Objetivo
 
-3️⃣ Extração de Sentimentos: Por fim, cada avaliação é analisada para determinar o sentimento expresso. Isso é feito usando a biblioteca TextBlob, que fornece uma medida de polaridade que vai de -1 (sentimento negativo) a +1 (sentimento positivo).
+Converter textos de avaliações em dados organizados e indicadores de sentimento para exploração.
 
-O resultado é um conjunto de dados detalhado que fornece uma visão geral do sentimento dos clientes em relação ao produto. Com essa informação, as empresas podem identificar problemas comuns, melhorar seus produtos e responder de forma mais eficaz às necessidades dos clientes.
+## O que você encontra
 
-Como as áreas de negócio pode se beneficar com essa técnica?
+- Coleta de avaliações com navegador e parsing de HTML.
+- Limpeza, tokenização, remoção de stopwords e lematização.
+- Cálculo de polaridade com TextBlob.
 
-Por exemplo, se um produto tem muitas avaliações negativas, pode ser necessário investigar e resolver problemas com o produto. Se um produto tem muitas avaliações positivas, pode ser uma oportunidade para destacar essas características positivas em campanhas de marketing. Além disso, a análise de sentimentos pode ajudar as empresas a entender melhor as tendências ao longo do tempo, identificar problemas emergentes antes que se tornem crises maiores e até mesmo avaliar o sentimento em torno de concorrentes e o mercado em geral.
+## Tecnologias
 
-A análise de sentimentos pode beneficiar uma ampla variedade de negócios. Por exemplo:
+Python · Selenium · Beautiful Soup · NLTK · TextBlob · pandas · scikit-learn
 
-🛍️ Varejo e E-commerce: A análise de sentimentos pode fornecer um feedback valioso sobre produtos, ajudando as empresas a identificar quais itens estão sendo bem recebidos e quais precisam de melhorias.
+## Arquivos principais
 
-🏢 Imobiliárias e Construtoras: As empresas podem identificar tendências e preferências, auxiliando no desenvolvimento e comercialização de futuros projetos imobiliários.
+| Arquivo | Conteúdo |
+| --- | --- |
+| [avaliação_produto_amazon.py](avalia%C3%A7%C3%A3o_produto_amazon.py) | Coleta, pré-processamento e análise de sentimento. |
 
-🍔 Restaurantes e Serviços de Alimentação: A análise de sentimentos pode ajudar a identificar os pratos mais populares, a qualidade do serviço, e até mesmo a atmosfera do estabelecimento.
+## Como explorar
 
-📱 Tecnologia e SaaS: Para empresas de tecnologia e software como serviço (SaaS), a análise de sentimentos pode ajudar a identificar problemas comuns enfrentados pelos usuários.
+Leia avaliação_produto_amazon.py para conferir a URL de entrada, o navegador e os recursos de linguagem utilizados. Em um ambiente com Selenium, Beautiful Soup, NLTK, TextBlob, pandas e scikit-learn, execute o script após preparar essas configurações.
 
-🧪 Farmacêuticas e Saúde: As empresas de saúde podem usar a análise de sentimentos para monitorar as opiniões dos pacientes sobre medicamentos e tratamentos.
+## Contexto do projeto
 
-No final das contas, a análise de sentimentos é uma ferramenta poderosa para qualquer negócio que se preocupa com a opinião dos clientes. Ao transformar o feedback dos clientes em dados acionáveis, as empresas podem tomar decisões mais informadas e se conectar mais profundamente com seus clientes.
+A coleta depende da estrutura das páginas consultadas. Os recursos linguísticos do NLTK precisam estar disponíveis no ambiente.
 
-Se você também acha fascinante o que a análise de dados pode revelar, vamos conversar! Estou sempre interessado em discutir sobre data science, NLP e como eles podem ser aplicados para resolver problemas do mundo real.
+---
+
+Integra o [portfólio de Thiago Oliveira](https://github.com/thiagoramos20042).
